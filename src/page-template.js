@@ -10,9 +10,7 @@ const displayManager = manager => {
 
             <div> class="flex-wrap flex-column p-0">
                 <ul class="list-unstyled m-0 p-2">
-                    <li class="bg-white border border-dark px-1">ID: ${manager.id} 
-                    <br><i class="bi bi-cup-hot-fill"></i>
-                    </li> 
+                    <li class="bg-white border border-dark px-1">ID: ${manager.id}</li> 
                     <li class="bg-white border border-dark px-1">Email: ${manager.email}</li>
                     <li class="bg-white border border-dark px-1">Office Number: ${manager.officeNumber}</li>
                 </ul>
