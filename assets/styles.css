@@ -1,0 +1,16 @@
+header h1 {
+    color: white;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    padding: 0px 50px;
+}
+
+#memberList {
+    width: 15%;
+    margin: 20px 0px; 
+    border-radius: 0px;
+}
