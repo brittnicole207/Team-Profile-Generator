@@ -1,5 +1,4 @@
-//index.js runs the application 
-
+//Once index.js is initialized, it will run the application
 const fs = require("fs"); 
 const inquirer = require("inquirer");
 const renderPage = require ("./src/page-template.js");
@@ -163,7 +162,7 @@ return inquirer.prompt ([
     default: false 
     }
 ])
-//When the manager says that they do not want to add another employee, theyn it will populate all the data that the Command Line requested from the manager. 
+//When the manager says that they do not want to add another employee, then it will populate all the data that the Command Line requested from the manager. 
     .then(employeeData => {
         let {name, email, id, role, github, school, confirmAdd} = employeeData;
         let employee = employeeData; 
