@@ -53,7 +53,7 @@ const promptManager = () => {
     },
 {
     type: "input",
-    name: "officeNumber",
+    name: "officeNum",
     message: "Please enter the office number: ",
     validate: userInput => {
        if (userInput) {
@@ -66,8 +66,8 @@ const promptManager = () => {
     }
 ])
 .then(managerInfo => {
-    const {name, email, id, officeNumber} = managerInfo;
-    const manager = new Manager (name, email, id, officeNumber);
+    const {name, email, id, officeNum} = managerInfo;
+    const manager = new Manager (name, email, id, officeNum);
 
         teamArray.push(manager);
         console.log(manager);
@@ -120,8 +120,8 @@ return inquirer.prompt ([
         type: "input",
         name: "id", 
         message: "Please provide the employee's ID: ",
-        validate: id => {
-            if (isNaN(id)) {
+        validate: idEntered => {
+            if (isNaN(idEntered)) {
             console.log("Please enter the employee's ID."); 
             return false;
         } else {
